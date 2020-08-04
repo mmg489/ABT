@@ -1,8 +1,12 @@
 //goals of the logic
 //user will input the name of the Book they are reading
+//identify when the user submits the book name
+//store the name of the book
+
 //will be saved to local storage
-let bookName = document.querySelector("#bookName");
-console.log(bookName);
+
+//const book = bookName.textContent;
+
 //Ask user what they are reading
 
 //user will then have the option to save character names in a list
