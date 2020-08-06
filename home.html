@@ -8,17 +8,22 @@
   <body>
     <h1>AudioBook Tracker</h1>
     <h2>For all you bibliophiles with forgetful memories! ;)</h2>
-    <h4>When will we be MVP?</h4>
-<div class="bookInfo">
+
     <form action="/logic.js" method="post">
-    <label for ="bookName">Book Name:</label>
-      <input type="text" class="bookName"/>
+    <ul>
+        <li>
+        <label for ="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="user_book" value="Type Your Book Name Here"/>
+        </li>
+    </ul>
     </form>
-</div>    
+   
+   <div> 
     <p>
       Book name is set, Character list is available for creation, Chapter you're
       on, and minute mark, small summary/notes available
     </p>
+    </div>
   </body>
 </html>
 
