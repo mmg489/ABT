@@ -9,18 +9,20 @@
     <h1>AudioBook Tracker</h1>
     <h2>For all you bibliophiles with forgetful memories! ;)</h2>
 
-    <form action="/logic.js" method="post">
+    <form action="home.html" method="GET"></form>
     <ul>
         <li>
         <label for ="bookName">Book Name:</label>
-        <input type="text" id="bookName" name="user_book" value="Type Your Book Name Here"/>
+        <input type="text" id="bookName" name="user_book" value=""/>
         </li>
         <li class="button">
-            <button type ="submit">Save your Book</button>
+            <button type ="submit" onclick="buttonPressed()">Save your book</button>
         </li>
     </ul>
     </form>
-   
+   <div>
+     <p id="currentBook"></p>
+   </div>
    <div> 
     <p>
       Book name is set, Character list is available for creation, Chapter you're

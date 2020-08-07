@@ -1,6 +1,11 @@
 //goals of the logic
 //user will input the name of the Book they are reading
+function buttonPressed() {
+  // document.write ( document.myForm.elements[0].value );
+  var book = document.getElementById("bookName");
 
+  document.getElementById("currentBook").append(book.value);
+}
 //identify when the user submits the book name
 //store the name of the book
 
