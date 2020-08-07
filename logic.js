@@ -16,15 +16,14 @@ function buttonPressed() {
   var character = document.getElementById("characterList");
 
   document.getElementById("characters").append(character.value);
+
+  var bookNote = document.getElementById("bookNotes");
+  document.getElementById("notes").append(bookNote.value);
 }
 //identify when the user submits the book name
 //store the name of the book
 
 //will be saved to local storage
-
-//const book = bookName.textContent;
-
-//Ask user what they are reading
 
 //user will then have the option to save character names in a list
 
