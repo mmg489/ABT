@@ -6,6 +6,12 @@ function buttonPressed() {
 
   document.getElementById("currentBook").append(book.value);
 }
+function chapterPressed() {
+  // document.write ( document.myForm.elements[0].value );
+  var chapter = document.getElementById("currentChapter");
+
+  document.getElementById("currentChapter").append(chapter.value);
+}
 //identify when the user submits the book name
 //store the name of the book
 
