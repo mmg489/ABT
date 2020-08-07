@@ -9,6 +9,13 @@ function buttonPressed() {
   var chapter = document.getElementById("chapterNumber");
 
   document.getElementById("chapterChapter").append(chapter.value);
+  var minute = document.getElementById("minuteMarker");
+
+  document.getElementById("minuteMark").append(minute.value);
+
+  var character = document.getElementById("characterList");
+
+  document.getElementById("characters").append(character.value);
 }
 //identify when the user submits the book name
 //store the name of the book
