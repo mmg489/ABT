@@ -8,7 +8,7 @@ function buttonPressed() {
 
   var chapter = document.getElementById("chapterNumber");
 
-  document.getElementById("currentNumber").append(chapter.value);
+  document.getElementById("chapterNumber").append(chapter.value);
 }
 //identify when the user submits the book name
 //store the name of the book
