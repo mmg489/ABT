@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel = "stylesheet" type=""text/css" href="bootstrap.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- minify -->
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAKDQs3Cg0L7QoNC/QKDAv0CgwL9AoMC/QKDAv0CgwL9AoMC/QKDAv0Cg0L9AoNC/QKDQv0Cg0L9QoNC+0KDQsdCg0MQAoNDLIKDAwTCgwMEwoMDBMKDAwTCgwMEwoMDBMKDAwTCgwMEwoMDBMKDAwTCgwMEwoNDBsLDQzjCw0MJQsNDEALDQypCw0MKwsNDFULDQxFCw0MSgsNDEoLDQwuCw0MMwsNDFULDQxTCw0MVAsNDFQLDQweCw0M3wsNDCULDQxACw0MoQsNDHULDQzZCw0McQsNDHYLDQzhCw0MCQsNDFoLDQzwCw0MiAsNDKQLDQz/Cw0MNwsNDN8LDQwlCw0MQAsNDKELDQx1Cw0MxgsNDGwLDQxtCw0M3AsNDBELDQxrCw4M5QsODGoLDgyGCw4M/wsODDgLDgzfCw4MJQsODEALDgyhCw4NQAsODZULDg1WCw4NYQsODX8LDg0fCw4NNQsODZULDg16Cw4NhAsODZULDg0cCw4N3wsODSULDg1ACw4N1QsODXkLDg1+Cw4NbwsODW8LDg1vCw4NbwsODW8LDg1vCw4NbwsODXEMDg1/DA4NegwODfMMDg0lDA4NQAwODfIMDg3BDA4N0AwODdUMDg3SDA4N0QwODbUMDg3CDA4NzgwODdUMDg3SDA8N3QwPDbQMDw3/DA8NJQwPDjQMDw3QDA8NiQwPDdAMDw2sDA8N0QwPDbIMDw3hDA8N4QwPDaMMDw3YDA8NsgwPDsUMDw5/DA8O4AwPDhwPEg4ADA8MAgwPDAIMDw4YDA8OUQwPDj0MDwwCDA8MAgwPDAIMDwwCDA8MAgwPDAIMDw4UDA8NBg0PDAEAAAAAAAAAAAAAAAAAAAAAAAAAAA0ODgANDw5FDQ8OYA0PDgMAAAAAAAAAAA0PDiMNDw5gDRAOKA0QDgkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADRAORw0QDncNEA5WAAAAAAAAAAANEA5kDRAOrA0QDnoNEA4NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANEA8pDRAPLA0QDw8AAAAADRAPFw0QDz4NEA8mDRAPJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANEA8aAAAAAAAAAAAAAAAADhEPAQ4RDzsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADhEPIg4RD3sOEQ+EDhEPfQ4RD2UOEQ8dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4REB8OERCRDhEQkg4REJsOERCqDhEQBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAPDDAAD4wwAA/EMAAP9zAAD/AwAA/wMAAA==" rel="icon" type="image/x-icon">
+    
   </head>
 
   <body>
-    <h1>AudioBook Tracker</h1>
-    <h2>For The Forgetful Bibliophile</h2>
+    <span class="nes-text is-primary"><h1>AudioBook Tracker</h1>
+    <h2 class="nes-text is-primary">For The Forgetful Bibliophile</h2></span>
+    <style> body {
+      background-image: url("images/music-1285165_1920.jpg");
+  
+    } </style>
 
     <form action="home.html" method="GET" ></form>
     <ul>
-        <li>
+        <li >
         <label for ="bookName">Book Name:</label>
-        <input type="text" id="bookName" name="user_book" value=""/>
+        <input type="text" class="nes-input" id="bookName" name="user_book" value=""/>
         </li>
        
         <li>
         <label for ="chapterNumber">Chapter number:</label>
-        <input type="text" id="chapterNumber" name="user_chapter" value=""/>
+        <input type="text" class="nes-input"  id="chapterNumber" name="user_chapter" value=""/>
         </li>
         
         <li>
           <label for ="minuteMarker">Minute Mark:</label>
-          <input type="text" id="minuteMarker" name="user_minute" value=""/>
+          <input type="text"  class="nes-input" id="minuteMarker" name="user_minute" value=""/>
           </li>
 
         <li>
           <label for ="characterList">Characters:</label>
-          <input type="text" id="characterList" name="user_characters" value=""/>
+          <input type="text" class="nes-input" id="characterList" name="user_characters" value=""/>
           </li>
          <li> 
            <label for = "bookNotes">Book Notes:</label>
-        <textarea name="bookNotes" id="bookNotes" row="10" cols="20"></textarea>
+        <textarea name="bookNotes" class="nes-textarea" id="bookNotes" row="10" cols="20"></textarea>
          </li>
         <li class="button">
-                <button type ="submit" onclick="buttonPressed()">Save Book Details</button>
+                <button type ="submit" onclick="buttonPressed()" class="nes-btn is-success">Save Book Details</button>
         </li>
     </ul>
     </form>
@@ -46,12 +54,8 @@
      <h3 id="characters">Characters:</h3>
      <h3 id="notes">Book Notes:</h3>
    </div>
-   <div> 
-    <p>
-      P LABEL IS HERE
-    </p>
-    </div>
   </body>
+  <footer><a href="https://icons8.com/icon/40453/cassette">Cassette icon by Icons8</a></footer>
 </html>
 
 <script src=/logic.js></script>
