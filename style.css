@@ -1,17 +1,19 @@
 body {
-  color: green;
   background-image: repeating-linear-gradient(#ee2277, #8b008b);
 }
 
 h1 {
   color: whitesmoke;
 }
-h2 {
-  color: greenyellow;
-}
-h3 {
-  color: pink;
-}
+h2,
+h3,
 li {
   color: pink;
+}
+
+a.external {
+  color: pink;
+  font-size: x-small;
+  padding-left: 500px;
+  opacity: 0.3;
 }
