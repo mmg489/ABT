@@ -22,12 +22,17 @@ function buttonPressed() {
 }
 //identify when the user submits the book name
 //store the name of the book
-
-if (localStorage(Storage) !== "undefined") {
-  console.log("Storage is confirmed");
-} else {
-  console.log("Sorry! No web storage support");
-}
+localStorage.setItem("book_name", JSON.stringify(minuteMarker));
+localStorage.setItem("chapter_number", "ReadyPlayerOne");
+localStorage.setItem("minute_mark", "ReadyPlayerOne");
+localStorage.setItem("characters", "ReadyPlayerOne");
+localStorage.setItem("book_notes", "ReadyPlayerOne");
+console.log(localStorage);
+// if (localStorage(Storage) !== "undefined") {
+//   console.log("Storage is confirmed");
+// } else {
+//   console.log("Sorry! No web storage support");
+// }
 
 //will be saved to local storage
 
