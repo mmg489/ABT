@@ -23,4 +23,6 @@ function buttonPressed() {
   localStorage.setItem("minuteMarker", JSON.stringify(minute));
   localStorage.setItem("characterList", JSON.stringify(character));
   localStorage.setItem("bookNotes", JSON.stringify(bookNote));
+
+  console.log(localStorage);
 }
