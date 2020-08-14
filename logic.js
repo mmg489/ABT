@@ -16,6 +16,14 @@ function buttonPressed() {
   var bookNote = document.getElementById("bookNotes");
   document.getElementById("notes").append(bookNote.value);
 
+  var bookData = {
+    book: "",
+    chapter: "",
+    minute: "",
+    character: "",
+    bookNote: "",
+  };
+
   //store the name of the book
   //will be saved to local storage
   localStorage.setItem("bookName", JSON.stringify(book));
