@@ -2,18 +2,15 @@
 //user will input the name of the Book they are reading
 function buttonPressed() {
   var book = document.getElementById("bookName");
-
   document.getElementById("currentBook").append(book.value);
 
   var chapter = document.getElementById("chapterNumber");
-
   document.getElementById("chapterChapter").append(chapter.value);
-  var minute = document.getElementById("minuteMarker");
 
+  var minute = document.getElementById("minuteMarker");
   document.getElementById("minuteMark").append(minute.value);
 
   var character = document.getElementById("characterList");
-
   document.getElementById("characters").append(character.value);
 
   var bookNote = document.getElementById("bookNotes");
@@ -26,6 +23,4 @@ function buttonPressed() {
   localStorage.setItem("minuteMarker", JSON.stringify(minute));
   localStorage.setItem("characterList", JSON.stringify(character));
   localStorage.setItem("bookNotes", JSON.stringify(bookNote));
-
-  console.log(localStorage);
 }
