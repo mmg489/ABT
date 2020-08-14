@@ -17,13 +17,13 @@ function buttonPressed() {
   document.getElementById("notes").append(bookNote.value);
 
   var bookData = {
-    book: "",
-    chapter: "",
-    minute: "",
-    character: "",
-    bookNote: "",
+    book: document.getElementById("bookName"),
+    chapter: document.getElementById("chapterNumber"),
+    minute: document.getElementById("minuteMarker"),
+    character: document.getElementById("characterList"),
+    bookNote: document.getElementById("bookNotes"),
   };
-
+  console.log(bookData);
   //store the name of the book
   //will be saved to local storage
   localStorage.setItem("bookName", JSON.stringify(book));
