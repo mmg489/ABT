@@ -1,7 +1,7 @@
 //goals of the logic
+var book = document.getElementById("bookName");
 //user will input the name of the Book they are reading
 function buttonPressed() {
-  var book = document.getElementById("bookName");
   document.getElementById("currentBook").append(book.value);
 
   var chapter = document.getElementById("chapterNumber");
