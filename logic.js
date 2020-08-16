@@ -24,13 +24,14 @@ function buttonPressed() {
     bookNote: document.getElementById("bookNotes"),
   };
   console.log(bookData);
-  //store the name of the book
-  //will be saved to local storage
-  localStorage.setItem("bookName", JSON.stringify(book));
-  localStorage.setItem("chapterNumber", JSON.stringify(chapter));
-  localStorage.setItem("minuteMarker", JSON.stringify(minute));
-  localStorage.setItem("characterList", JSON.stringify(character));
-  localStorage.setItem("bookNotes", JSON.stringify(bookNote));
-
-  console.log(localStorage);
 }
+
+//store the name of the book
+//will be saved to local storage
+localStorage.setItem("bookName", JSON.stringify(book));
+localStorage.setItem("chapterNumber", JSON.stringify(chapter));
+localStorage.setItem("minuteMarker", JSON.stringify(minute));
+localStorage.setItem("characterList", JSON.stringify(character));
+localStorage.setItem("bookNotes", JSON.stringify(bookNote));
+
+console.log(localStorage);
