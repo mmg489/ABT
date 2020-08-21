@@ -3,16 +3,16 @@ body {
 }
 
 h1 {
-  color: purple;
+  color: greenyellow;
 }
 h2,
 h3,
 li {
-  color: greenyellow;
+  color: #f42072;
 }
 
 a.external {
-  color: blueviolet;
+  color: greenyellow;
   font-size: x-small;
   padding-left: 700px;
   opacity: 0.3;
