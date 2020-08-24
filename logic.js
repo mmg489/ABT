@@ -16,15 +16,6 @@ function buttonPressed() {
 
   var bookNote = document.getElementById("bookNotes");
   document.getElementById("notes").append(bookNote.value);
-
-  var bookData = {
-    book: document.getElementById("bookName"),
-    chapter: document.getElementById("chapterNumber"),
-    minute: document.getElementById("minuteMarker"),
-    character: document.getElementById("characterList"),
-    bookNote: document.getElementById("bookNotes"),
-  };
-  console.log(bookData);
 }
 
 //store the name of the book
@@ -36,3 +27,14 @@ localStorage.setItem("characterList", JSON.stringify(character));
 localStorage.setItem("bookNotes", JSON.stringify(bookNote));
 
 console.log(localStorage);
+
+function saveBook() {
+  var bookData = {
+    book: document.getElementById("bookName"),
+    chapter: document.getElementById("chapterNumber"),
+    minute: document.getElementById("minuteMarker"),
+    character: document.getElementById("characterList"),
+    bookNote: document.getElementById("bookNotes"),
+  };
+  console.log(bookData);
+}
