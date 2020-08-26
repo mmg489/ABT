@@ -39,12 +39,12 @@ function saveBook() {
   console.log(bookData);
 }
 
-/ Store data
-var someData = 'The data that I want to store for later.';
-localStorage.setItem('myDataKey', someData);
+// Store data
+var someData = "The data that I want to store for later.";
+localStorage.setItem("myDataKey", someData);
 
 // Get data
-var data = localStorage.getItem('myDataKey');
+var data = localStorage.getItem("myDataKey");
 
 // Remove data
-localStorage.removeItem('myDatakey');
+localStorage.removeItem("myDatakey");
