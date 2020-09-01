@@ -33,6 +33,13 @@ function buttonPressed() {
 
 console.log(localStorage);
 
+function showLast() {
+  localStorage.getItem("book", bookVal);
+  localStorage.getItem("chapter", chapterVal);
+  localStorage.getItem("minute", minuteVal);
+  localStorage.getItem("character", characterVal);
+  localStorage.getItem("bookNote", bookNoteVal);
+}
 //Notes
 // to save data to the localStorage you need to pass TWO arguments, the key and the actual data value you want to store
 // in this case we are storing each input by name as the "key" and the value the user enters as the data
